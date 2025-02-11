@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <!-- label means  tag assigh garnu -->
+        <!-- radio bottons  we can choice only one option  -->
+        <!-- -- checkbook is used for select multiple lines -->  
+
+<h3>Registration from</h3>
+    <form  action="/action.php">
+        <input type="text"placeholder="username">
+        <br>
+        <br>
+        <input type="password"placeholder="password">
+        <br>        
+<h3>select your class</h3>
+ <label for="101">
+        <input type="radio"value="class XI"name="class" id="101">class XI
+    </label>
+    <br>
+     <label for="102">
+<input type="radio"value="class XII"name="class" id="102">class XII
+</label>
+<h3>Select your fav subjects</h3>
+<label for="math">
+    <input type="checkbox" value="math" name="subject" id="101">Math
+</label>
+<br><br>
+<label for="phy">
+<input type="checkbox" value="phy" name="subject" id="102">Physics
+</label>
+<br><br>
+<label for="chem">
+    <input type="checkbox" value="chem" name="subject" id="103">Chemistry
+</label>
+<br><br>
+<label for="CS">
+    <input type="checkbox" value="CS" name="subject" id="104">Computer
+</label>
+<br>
+<h3>Select your address</h3>
+<select name="city">
+    <option value="Gokule">Gokule</option>
+    <option value="Katan">Katan</option>
+    <option value="Vasi">Vasi</option>
+    <option value="Shuda">Suda</option>
+</select>
+
+<br>
+<br>
+<h3> Give here feedback</h3>
+<textarea name="feedback" id="101" placeholder="please give your feedback here" rows=5></textarea>
+
+<br>
+<br>
+<input type="submit" value="submit">
+</form>
+<footer></footer>
+    
+</body>
+</html>
