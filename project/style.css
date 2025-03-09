@@ -1,0 +1,43 @@
+*{
+        color:white;
+}
+
+
+img{
+    height:200px;
+    width:200px;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:100px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #041308,#0b3317);
+}
+.gallery{
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);  /* 3 column of equal size*/
+    flex-basis: 50%;
+    gap:5px;
+
+    grid-auto-rows: 120px;      /*for rows sizes */
+    
+}
+.heading{
+    margin-top:400px; 
+    flex-basis: 30%;
+}
+
+h1{
+    text-align: center;
+}
+.box{
+    background-size: cover;
+     background-position: bottom; 
+     color: white;
+     display: flex;
+     
+}

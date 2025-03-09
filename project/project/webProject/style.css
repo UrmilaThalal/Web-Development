@@ -1,0 +1,181 @@
+/* Root Variables for Dynamic Styling */
+:root {
+    --primary-color: #4e94df;
+    --secondary-color: #bdd3eb;
+    --text-color: black;
+    --background-color: #f9f9f9;
+    --button-hover: #0056b3;
+    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.navContainer {
+    background: var(--secondary-color);
+    border-radius: 15px;
+    margin: 1rem 2rem;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navList li {
+    display: inline;
+}
+
+.navList a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navList a:hover {
+    color: var(--primary-color);
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+section {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+figcaption{
+    font-size: 25px;
+    font-weight: 600;
+}
+.formContainer {
+    background: white;
+    width: 100%;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease-in-out;
+}
+
+.formContainer:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields & Buttons */
+input, button, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Dynamic Buttons */
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: rotate(10deg);
+}
+
+/* Dynamic Table */
+.table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    width: 90%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+}
+
+
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skills ul  li{
+    list-style: none;
+}
